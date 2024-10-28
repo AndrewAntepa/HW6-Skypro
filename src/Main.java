@@ -47,9 +47,9 @@ public class Main {
 
         System.out.println("\nЗадание 9");
         total = 0;
-        for (int i = 1; i < 13; i++) {
-            total *= 1.12;
-            total +=  savingsPerMonth;
+        for (int i = 0; i < 12; i++) {
+            total = total + total / 100;
+            total += savingsPerMonth;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
 
